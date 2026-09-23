@@ -76,6 +76,7 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 .role { margin: 20px 0 0; color: var(--yellow); font-size: clamp(1.25rem, 2.2vw, 1.65rem); font-weight: 750; }
 .intro { max-width: 670px; margin: 18px 0 0; color: rgba(255,255,255,0.74); font-size: 1.04rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hero-social-links { display: flex; gap: 12px; }
 .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; padding: 0 22px; border: 1px solid transparent; border-radius: 999px; font-weight: 750; }
 .button-primary { color: var(--green-950); background: var(--yellow); }
 .button-secondary { border-color: rgba(255,255,255,0.35); color: var(--white); }
@@ -139,7 +140,7 @@ h1, h2, h3, p { overflow-wrap: break-word; }
 .tools-section { color: var(--white); background: var(--green-950); }
 .tools-section .eyebrow { color: var(--yellow); }
 .tools-section .section-heading h2 { font-size: clamp(2.15rem, 4.1vw, 3.55rem); }
-.tools-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 22px; }
+.tools-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 22px; }
 .tool-card { padding: 24px 28px; border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); background: rgba(255,255,255,0.045); }
 .tool-card h3 { margin: 0 0 16px; font-size: 1.35rem; line-height: 1.25; }
 .tool-card ul { margin: 0; padding: 0; list-style: none; color: rgba(255,255,255,0.7); }
@@ -154,7 +155,6 @@ footer { color: rgba(255,255,255,0.66); background: #061f1c; }
 
 @media (max-width: 860px) {
   .section-heading { align-items: start; flex-direction: column; gap: 18px; }
-  .tools-grid { grid-template-columns: 1fr; }
   .tool-card { min-height: 0; }
   .tool-card h3 { min-height: 0; }
 }
@@ -176,6 +176,7 @@ footer { color: rgba(255,255,255,0.66); background: #061f1c; }
   .project-card-last { grid-column: auto; width: 100%; }
   .project-content { padding: 24px; }
   .project-content h3 { min-height: 0; }
+  .tools-grid { grid-template-columns: 1fr; }
   .footer-inner { min-height: 130px; align-items: flex-start; justify-content: center; flex-direction: column; gap: 10px; }
 }
 
